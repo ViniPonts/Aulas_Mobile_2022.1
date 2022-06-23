@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Button, TouchableOpacity ,SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, Image, Button, TouchableOpacity ,SafeAreaView, AsyncStorage, async } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign'
+
+
 
 export default function MainMenu({navigation}){
 
@@ -8,7 +10,7 @@ export default function MainMenu({navigation}){
   return(
     <SafeAreaView style={styles.Container}>
       <View style={styles.IconSound} >
-      <Icon name="sound" size={40} color="#FFFFFF"/>
+        <Icon name="sound" size={40} color="#FFFFFF"/>
       </View>
       <View>
         <Image style={styles.icon} source={{ uri: 'https://www.hypeness.com.br/1/2019/11/a%CC%81rvores-em-preto-e-branco-9.jpg' }}>
@@ -18,7 +20,7 @@ export default function MainMenu({navigation}){
       <View style={styles.ButtonArea}>
         <TouchableOpacity
           style={styles.Button}
-          onPress={() => navigation.navigate('RotaA_Cena1')}>
+          onPress={() => navigation.navigate('Cena0')}>
             <Text style={styles.ButtonText}>
               ~Começar o jogo~
             </Text>

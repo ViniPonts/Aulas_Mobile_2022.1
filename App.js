@@ -20,6 +20,7 @@ import RotaB_Cena6 from './src/viwer/Cenas/RotaB/RotaB_Cena6'
 import RotaC_Cena4 from './src/viwer/Cenas/RotaC/RotaC_Cena4'
 import RotaC_Cena5 from './src/viwer/Cenas/RotaC/RotaC_Cena5'
 import RotaC_Cena6 from './src/viwer/Cenas/RotaC/RotaC_Cena6'
+import Cena0 from       './src/viwer/Cenas/Cena0'
 
 const Stack = createStackNavigator();
 
@@ -27,6 +28,8 @@ function MyStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="MainMenu" component={MainMenu} />
+      <Stack.Screen name="Cena0" component={Cena0}/>
+
       <Stack.Screen name="RotaA_Cena1" component={RotaA_Cena1}/>
       <Stack.Screen name="RotaA_Cena2" component={RotaA_Cena2}/>
       <Stack.Screen name="RotaA_Cena3" component={RotaA_Cena3}/>
@@ -43,6 +46,7 @@ function MyStack() {
       <Stack.Screen name="RotaC_Cena5" component={RotaC_Cena5}/>
       <Stack.Screen name="RotaC_Cena6" component={RotaC_Cena6}/>
 
+      
     </Stack.Navigator>
   );
 }
